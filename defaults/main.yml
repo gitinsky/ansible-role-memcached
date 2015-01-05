@@ -1,0 +1,4 @@
+---
+memory: 64
+port: 11211
+user: memcached

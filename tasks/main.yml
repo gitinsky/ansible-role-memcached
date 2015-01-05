@@ -1,0 +1,7 @@
+---
+- name: install memcached
+  yum: name=memcached state=present
+
+- name: put eye config
+  template: src=eye.rb dest=/etc/eye/memcached-{{ port }}.rb
+  notify: reload eye
